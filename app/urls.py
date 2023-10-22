@@ -17,6 +17,7 @@ urlpatterns = [
     # Страница удаления задачи и тоже принимает идентификатор
     path('<int:pk>/delete/', TaskDeleteView.as_view(), name='task_delete'),
 ]
+
 # urlpatterns = [
 #     re_path(r'^$', TaskListView.as_view(), name='task_list'),
 #     re_path(r'^create$', TaskCreateView.as_view(), name='task_create'),
